@@ -1,5 +1,6 @@
 import VerticalTimeline from "@/components/VerticalTimeline";
 import { motion } from "framer-motion";
+import Head from "next/head";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -17,21 +18,16 @@ const data: HomeData = {
   },
 };
 
-const options = {
-  year: "numeric",
-  month: "long",
-};
-
 export default function Home() {
   return (
     <div className="mx-auto max-w-5xl">
       <div className="flex space-x-4 md:flex-row md:space-x-6">
-        <div className="relative mx-auto block h-24 min-w-[96px] md:mx-0">
+        <div className="relative mx-auto block h-32 min-w-[128px] md:mx-0">
           <Image
-            className="object-fit w-full rounded-full"
+            className="h-full w-full rounded-full object-cover"
             fill={true}
             alt="my-image"
-            src="/my-image.jpg"
+            src="https://res.cloudinary.com/datqllqvo/image/upload/v1679347137/D4E6EFA6-C0CF-4CDD-B122-EDC9D29C179F_dcbrrf_raguku.jpg"
             priority={true}
           />
         </div>
@@ -42,7 +38,7 @@ export default function Home() {
               Software Engineer
             </h4>
           </div>
-          <div className="inline-flex space-x-2 md:space-x-4">
+          <div className="inline-flex space-x-4">
             <a href={data.links.github} target="_blank">
               <FaGithub className="h-6 w-6" />
             </a>
@@ -53,16 +49,21 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-4">
-        <p className="">
+        <p>
           With a passion for web development I am specialized in front-end,
           leveraging cutting-edge technologies to solve complex problems and
           deliver high-quality solutions. I am a dedicated professional with a
           passion for my work, constantly seeking new ways to improve my skills.
         </p>
-        {/* <div className="mt-4">
-          <h5 className="font-bold text-gray-400">Quick Skills</h5>
-          <p>Front end</p>
-        </div> */}
+        <br />
+        <p>
+          My current productive stack is based on React/Next.js for front-end
+          development and Tailwind for styling purposes. While I have some
+          experience with Express for back-end development, I recently
+          discovered tRPC and was amazed by its robust type safety. It is
+          currently my preferred choice for quickly developing prototypes. As
+          for database, Prisma serves as my preferred database solution.
+        </p>
         <motion.div
           className="mt-10"
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +74,7 @@ export default function Home() {
             works={[
               {
                 title: "Critical Techworks (BMW Group)",
-                description: "Full Stack Developer",
+                description: "Front-End Developer",
                 date: "sept. 2021",
                 link: "https://www.criticaltechworks.com",
               },

@@ -66,7 +66,10 @@ const ProjectCard = ({
           <div className="">{description.text}</div>
           <ul className="ml-8">
             {description.bullets.map((bullet, index) => (
-              <li className="list-disc" key={index}>
+              <li
+                className="list-disc text-sm text-gray-600 dark:text-gray-400"
+                key={index}
+              >
                 {bullet}
               </li>
             ))}

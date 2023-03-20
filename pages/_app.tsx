@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
       <Navbar />
-      <div className="mx-5 my-6 h-screen md:mx-20 md:my-20">
+      <div className="mx-5 my-6 md:mx-20 md:my-20">
         <Component {...pageProps} />
       </div>
     </ThemeProvider>
