@@ -24,7 +24,7 @@ export default function Home() {
       <div className="flex space-x-4 md:flex-row md:space-x-6">
         <div className="relative mx-auto block h-32 min-w-[128px] md:mx-0">
           <Image
-            className="h-full w-full rounded-full object-cover"
+            className="h-full w-full rounded-full object-cover shadow-xl"
             fill={true}
             alt="my-image"
             src="https://res.cloudinary.com/datqllqvo/image/upload/v1679347137/D4E6EFA6-C0CF-4CDD-B122-EDC9D29C179F_dcbrrf_raguku.jpg"
