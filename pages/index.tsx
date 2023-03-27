@@ -1,3 +1,4 @@
+import TextLink from "@/components/TextLink";
 import VerticalTimeline from "@/components/VerticalTimeline";
 import { motion } from "framer-motion";
 import Head from "next/head";
@@ -50,19 +51,32 @@ export default function Home() {
       </div>
       <div className="mt-4">
         <p>
-          With a passion for web development I am specialized in front-end,
+          With passion for web development I am specialized in front-end,
           leveraging cutting-edge technologies to solve complex problems and
-          deliver high-quality solutions. I am a dedicated professional with a
-          passion for my work, constantly seeking new ways to improve my skills.
+          deliver high-quality solutions.
+        </p>
+        <p>
+          Through this website, I want to showcase my work, projects, and ideas.
+          I like to actively experiment with emerging technologies to remain
+          up-to-date and continuously expand my knowledge base.
         </p>
         <br />
+        <h4 className="text-lg font-bold text-gray-900 dark:text-gray-400 md:mt-2">
+          Technology Interests
+        </h4>
         <p>
-          My current productive stack is based on React/Next.js for front-end
-          development and Tailwind for styling purposes. While I have some
-          experience with Express for back-end development, I recently
-          discovered tRPC and was amazed by its robust type safety. It is
-          currently my preferred choice for quickly developing prototypes. As
-          for database, Prisma serves as my preferred database solution.
+          My current productive stack is based on
+          <TextLink text={"React / Next.js"} link={"https://nextjs.org/"} />
+          for front-end development and
+          <TextLink text={"Tailwind"} link={"https://tailwindcss.com/"} />
+          for styling purposes. While I have some experience with Express
+          <TextLink text={"Express"} link={"https://expressjs.com/"} />
+          for back-end development, I recently discovered
+          <TextLink text={"tRPC"} link={"https://trpc.io/"} />
+          and was amazed by its robust type safety. As for database,
+          <TextLink text={"Prisma"} link={"https://www.prisma.io/"} />
+          serves as my database solution. These are my preferred choices for
+          quickly developing prototypes.
         </p>
         <motion.div
           className="mt-10"
