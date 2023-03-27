@@ -69,7 +69,7 @@ export default function Home() {
           <TextLink text={"React / Next.js"} link={"https://nextjs.org/"} />
           for front-end development and
           <TextLink text={"Tailwind"} link={"https://tailwindcss.com/"} />
-          for styling purposes. While I have some experience with Express
+          for styling purposes. While I have some experience with
           <TextLink text={"Express"} link={"https://expressjs.com/"} />
           for back-end development, I recently discovered
           <TextLink text={"tRPC"} link={"https://trpc.io/"} />
