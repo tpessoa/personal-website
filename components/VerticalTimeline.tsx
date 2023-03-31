@@ -28,14 +28,14 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ works }) => {
               <div className="absolute top-[2px] left-1/2 h-4 w-4 -translate-x-1/2 transform rounded-full bg-indigo-400 ring-2 ring-indigo-500"></div>
             </div>
             <div className="grow">
-              <div className="flex space-x-2 md:space-x-4">
+              <div className="flex md:space-x-4">
                 <h3 className="font-semibold">{work.jobTitle}</h3>
                 <a
                   href={work.link}
                   target="_blank"
                   className="inline-flex items-center space-x-2"
                 >
-                  <div className="relative h-5 w-5">
+                  <div className="relative h-full min-w-[24px]">
                     <Image
                       className="rounded-lg object-contain"
                       src={`https://www.google.com/s2/favicons?domain=${work.link}&sz=64`}
