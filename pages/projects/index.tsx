@@ -7,9 +7,9 @@ export const projectsDataCard: ProjectCardProps[] = [
     description: {
       text: "Tool for boosting productivity and staying focused throughout the day. Main features:",
       bullets: [
-        "Three different timers: Pomodoro, short break, and long break.",
-        "A form editing feature is available for each timer, and this information is stored in the local storage of the user's browser.",
-        "The application is designed to be responsive across multiple screen sizes.",
+        "Three different timers: Pomodoro, short break, and long break",
+        "A form editing feature is available for each timer, and this information is stored in the local storage of the user's browser",
+        "The application is designed to be responsive across multiple screen sizes",
       ],
     },
     links: {
@@ -23,6 +23,7 @@ export const projectsDataCard: ProjectCardProps[] = [
         "v1679005645/pomodoro_3_dejcq5.png",
       ],
     },
+    technologies: ["Next.js", "Tailwind"],
   },
   {
     title: "Dictionary",
@@ -30,9 +31,9 @@ export const projectsDataCard: ProjectCardProps[] = [
       text: "Dictionary Web App tool for expanding vocabulary and finding the words definitions. Main features:",
       bullets: [
         "Integration with a dictionary API for fetching word definitions and related information",
-        "A toggle feature to switch between dark and light mode.",
-        "Text to speech.",
-        "The application is designed to be responsive across multiple screen sizes.",
+        "A toggle feature to switch between dark and light mode",
+        "Text to speech",
+        "The application is designed to be responsive across multiple screen sizes",
       ],
     },
     links: {
@@ -46,15 +47,17 @@ export const projectsDataCard: ProjectCardProps[] = [
         "v1679005645/dictionary_1_m1rnid.png",
       ],
     },
+    technologies: ["Next.js", "Tailwind", "API integration"],
   },
   {
     title: "Multi Step Form",
     description: {
       text: "PoC of an multi step form. Main features:",
       bullets: [
-        "Dynamic final summary based on the subscritions/princing choosed.",
-        "Applied React useContext hook to share state between the form pages.",
-        "The application is designed to be responsive across multiple screen sizes.",
+        "Dynamic final summary based on the subscritions/princing choosed",
+        "Field validations with react-formik",
+        "Applied React useContext hook to share state between the form pages",
+        "The application is designed to be responsive across multiple screen sizes",
       ],
     },
     links: {
@@ -65,14 +68,15 @@ export const projectsDataCard: ProjectCardProps[] = [
       relativePath: "https://res.cloudinary.com/datqllqvo/image/upload/",
       files: ["v1679005419/step_3_pjxflm.png", "v1679005419/step_4_vzgj5k.png"],
     },
+    technologies: ["Next.js", "Tailwind"],
   },
 ];
 
 const index = () => {
   return (
-    <div className="w-full">
-      <h1 className="mb-6 text-3xl">Projects</h1>
-      <div className="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2">
+    <div className="mx-auto max-w-5xl">
+      <h2 className="mb-4 text-xl">Prototyping / Training</h2>
+      <div className="grid auto-rows-fr grid-cols-1 gap-4 lg:grid-cols-3">
         {projectsDataCard.map((project, index) => (
           <ProjectCard {...project} key={index} />
         ))}

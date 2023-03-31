@@ -1,7 +1,6 @@
 import TextLink from "@/components/TextLink";
 import VerticalTimeline from "@/components/VerticalTimeline";
 import { motion } from "framer-motion";
-import Head from "next/head";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -61,7 +60,7 @@ export default function Home() {
           up-to-date and continuously expand my knowledge base.
         </p>
         <br />
-        <h4 className="text-lg font-bold text-gray-900 dark:text-gray-400 md:mt-2">
+        <h4 className="text-lg font-bold text-gray-900 dark:text-gray-400">
           Technology Interests
         </h4>
         <p>
@@ -78,8 +77,8 @@ export default function Home() {
           serves as my database solution. These are my preferred choices for
           quickly developing prototypes.
         </p>
+        <br />
         <motion.div
-          className="mt-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
@@ -87,10 +86,16 @@ export default function Home() {
           <VerticalTimeline
             works={[
               {
-                title: "Critical Techworks (BMW Group)",
-                description: "Front-End Developer",
-                date: "sept. 2021",
+                company: "Critical Techworks (BMW Group)",
+                jobTitle: "Front-end Software Engineer",
+                startDate: "Sept 2021",
+                endDate: "Present",
                 link: "https://www.criticaltechworks.com",
+                description: [
+                  "Develop reusable and scalable components, implemented new features and resolved defects to optimize system functionality.",
+                  "Collaborated closely with a product owner and designer to ensure efficient and effective features implementations.",
+                  "Conducted code reviews and provided support to colleagues to improve code quality.",
+                ],
               },
             ]}
           />
