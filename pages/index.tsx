@@ -50,14 +50,12 @@ export default function Home() {
       </div>
       <div className="mt-4">
         <p>
-          With passion for web development I am specialized in front-end,
-          leveraging cutting-edge technologies to solve complex problems and
-          deliver high-quality solutions.
+          I am a passionate software engineer with focus on web development that
+          likes cutting-edge technologies to solve complex problems and deliver
+          high-quality solutions.
         </p>
         <p>
-          Through this website, I want to showcase my work, projects, and ideas.
-          I like to actively experiment with emerging technologies to remain
-          up-to-date and continuously expand my knowledge base.
+          Through this website, I want to showcase my work, projects and ideas.
         </p>
         <br />
         <h4 className="text-lg font-bold text-gray-900 dark:text-gray-400">
