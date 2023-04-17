@@ -89,7 +89,7 @@ const Navbar = () => {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="My_CV.pdf"
+                      href="resume.pdf"
                       target="_blank"
                       className={clsx(
                         "flex w-full items-center rounded-md px-2 py-2 text-sm dark:text-white",
@@ -132,7 +132,7 @@ const Navbar = () => {
           <NavbarButton label={"Home"} link={"/"} />
           <div className="inline-flex justify-end space-x-8">
             <NavbarButton label={"Projects"} link={"/projects"} />
-            <a href="My_CV.pdf" target="_blank">
+            <a href="resume.pdf" target="_blank">
               Resume
             </a>
 
