@@ -27,7 +27,7 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ works }) => {
               <div className="absolute top-1/2 left-1/2 h-full -translate-x-1/2 -translate-y-1/2 transform border border-indigo-500"></div>
               <div className="absolute top-[2px] left-1/2 h-4 w-4 -translate-x-1/2 transform rounded-full bg-indigo-400 ring-2 ring-indigo-500"></div>
             </div>
-            <div className="grow">
+            <div className={`${index < works.length - 1 && "mb-6"}  grow`}>
               <div className="flex space-x-2 md:space-x-4">
                 <h3 className="font-semibold">{work.jobTitle}</h3>
                 <a
@@ -52,13 +52,13 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ works }) => {
               <p className="text-sm text-gray-400">
                 {work.startDate} - {work.endDate}
               </p>
-              {/* <ul className="mt-2">
+              <ul className="mt-2">
                 {work.description.map((description, index) => (
                   <li key={index} className="text-sm">
                     - {description}
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </div>
           </div>
         ))}

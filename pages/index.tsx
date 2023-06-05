@@ -85,14 +85,25 @@ export default function Home() {
             works={[
               {
                 company: "Critical Techworks (BMW Group)",
-                jobTitle: "Front-end Software Engineer",
+                jobTitle: "Software Engineer",
                 startDate: "Sept 2021",
                 endDate: "Present",
                 link: "https://www.criticaltechworks.com",
                 description: [
-                  "Develop reusable and scalable components, implemented new features and resolved defects to optimize system functionality.",
-                  "Collaborated closely with a product owner and designer to ensure efficient and effective features implementations.",
-                  "Conducted code reviews and provided support to colleagues to improve code quality.",
+                  "Front‑end web development",
+                  "Automatic testing design and implementation",
+                  "Cross-functional team experience",
+                ],
+              },
+              {
+                company: "Jean Monnet Centre of Excellence",
+                jobTitle: "Full-Stack Software Engineer",
+                startDate: "Sept 2020",
+                endDate: "Jul 2021",
+                link: "https://coe.uc.pt/en/sobre/",
+                description: [
+                  "Designed and implemented a didactic platform for hosting European Union (EU) activities",
+                  "Conceptualize and developed educational board games",
                 ],
               },
             ]}

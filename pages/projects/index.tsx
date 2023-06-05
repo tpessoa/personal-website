@@ -1,7 +1,8 @@
-import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
+import { ProjectCardProps } from "@/components/ProjectCard";
+import ProjectSection from "@/components/ProjectSection";
 import React from "react";
 
-export const projectsDataCard: ProjectCardProps[] = [
+const prototypingProjectsData: ProjectCardProps[] = [
   {
     title: "Pomodoro",
     description: {
@@ -72,15 +73,29 @@ export const projectsDataCard: ProjectCardProps[] = [
   },
 ];
 
+const productionProjectsData: ProjectCardProps[] = [
+  {
+    title: "Personal Website",
+    description: {
+      text: "My personal website/portfolio. Main features:",
+      bullets: ["Custom timeline", "Mobile responsive"],
+    },
+    links: {
+      demo: "https://www.tpessoa.online",
+      github: "https://github.com/tpessoa/personal-website",
+    },
+    technologies: ["Next.js", "Tailwind"],
+  },
+];
+
 const index = () => {
   return (
-    <div className="mx-auto max-w-5xl">
-      <h2 className="mb-4 text-xl">Prototyping / Training</h2>
-      <div className="grid auto-rows-fr grid-cols-1 gap-4 lg:grid-cols-3">
-        {projectsDataCard.map((project, index) => (
-          <ProjectCard {...project} key={index} />
-        ))}
-      </div>
+    <div className="mx-auto flex max-w-5xl flex-col space-y-6">
+      <ProjectSection title={"Production"} projects={productionProjectsData} />
+      <ProjectSection
+        title={"Prototyping / Training"}
+        projects={prototypingProjectsData}
+      />
     </div>
   );
 };

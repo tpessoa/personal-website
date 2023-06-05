@@ -15,7 +15,7 @@ export type ProjectCardProps = {
     github: string;
     demo: string;
   };
-  images: {
+  images?: {
     relativePath: string;
     files: string[];
   };
