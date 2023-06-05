@@ -97,7 +97,7 @@ export default function Home() {
               },
               {
                 company: "Jean Monnet Centre of Excellence",
-                jobTitle: "Full-Stack Software Engineer",
+                jobTitle: "Software Engineer Internship",
                 startDate: "Sept 2020",
                 endDate: "Jul 2021",
                 link: "https://coe.uc.pt/en/sobre/",
